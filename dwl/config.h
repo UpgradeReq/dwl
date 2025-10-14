@@ -145,6 +145,7 @@ static const Key keys[] = {
 	{ MODKEY, 		     XKB_KEY_v,		 spawn,		 SHCMD ("mullvad-vpn")},
 	{ MODKEY,                    XKB_KEY_c,          spawn,          SHCMD ("mullvad reconnect")},
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_B,          spawn,          SHCMD ("chromium")},
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_L,          spawn,          SHCMD ("swaylock -c 000000")},
 	{ MODKEY, 		     XKB_KEY_e,          spawn,          SHCMD ("nemo")},
 	{ 0,                         XF86AudioRaiseVolume, spawn,        SHCMD ("alacritty -e alsamixer")},
 	{ WLR_MODIFIER_CTRL|WLR_MODIFIER_SHIFT, XKB_KEY_Escape, spawn,   SHCMD ("alacritty -e btop")},
