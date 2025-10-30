@@ -145,7 +145,8 @@ static const char *dmenucmd[] = { "wmenu", NULL };
 static const Key keys[] = {
 	/* Note that Shift changes certain key codes: c -> C, 2 -> at, etc. */
 	/* modifier                  key                 function        argument */
-	{ MODKEY|WLR_MODIFIER_ALT,   XKB_KEY_o,          spawn,          SHCMD ("alacritty -e nvim")},
+	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_O,          spawn,          SHCMD ("alacritty -e nvim")},
+	{ MODKEY|WLR_MODIFIER_ALT,   XKB_KEY_o,          spawn,          SHCMD ("alacritty -e rmpc")},
 	{ MODKEY, 		     XKB_KEY_v,		 spawn,		 SHCMD ("mullvad-vpn")},
 	{ MODKEY,                    XKB_KEY_c,          spawn,          SHCMD ("mullvad reconnect")},
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_B,          spawn,          SHCMD ("chromium")},
